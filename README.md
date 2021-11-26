@@ -1,3 +1,25 @@
+# CLVR Clothing VS
+
+**Name:** CLVR Clothing E-commerce PWA by Veren Studio
+
+**Author:** Kostiantyn Verenych
+
+## Notes
+
+...
+
+## Resources:
+
+### redux
+- https://redux.js.org
+- https://github.com/reduxjs/cra-template-redux
+
+### react-icons
+- https://react-icons.github.io/react-icons/
+- https://yarnpkg.com/package/react-icons
+
+#
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
