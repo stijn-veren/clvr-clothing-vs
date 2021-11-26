@@ -11,12 +11,18 @@
 ## Resources:
 
 ### redux
+
 - https://redux.js.org
 - https://github.com/reduxjs/cra-template-redux
 
 ### react-icons
+
 - https://react-icons.github.io/react-icons/
 - https://yarnpkg.com/package/react-icons
+
+### styled-components
+
+- https://styled-components.com
 
 #
 
