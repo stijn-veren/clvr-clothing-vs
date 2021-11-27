@@ -1,8 +1,13 @@
+// modules
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.sass'
+
+// components
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+
+// styles
+import './index.sass'
 
 ReactDOM.render(
   <React.StrictMode>
