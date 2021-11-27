@@ -1,3 +1,19 @@
+# CLVR Clothing VS
+
+**Name:** CLVR Clothing E-commerce PWA by Veren Studio
+
+**Author:** Kostiantyn Verenych
+
+## Notes
+
+...
+
+## Resources:
+
+...
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
