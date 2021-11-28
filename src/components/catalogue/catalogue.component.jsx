@@ -7,8 +7,6 @@ import { CatalogueContainer } from './catalogue.styles.js'
 
 const Catalogue = () => (
   <section>
-    <h1>Catalogue</h1>
-
     <CatalogueContainer>
       {CATALOGUE_DATA.map((item) => {
         return (

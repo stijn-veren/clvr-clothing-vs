@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const CatalogueContainer = styled.div`
-  width: 100%;
+  width: 90%;
+  padding: 20px 5%;
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
