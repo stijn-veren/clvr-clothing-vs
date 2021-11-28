@@ -9,9 +9,18 @@ const Catalogue = () => (
   <section>
     <h1>Catalogue</h1>
 
-    {CATALOGUE_DATA.map((item) => (
-      <CatalogueItem key={item.id} item={item.name} />
-    ))}
+    <div className="catalogue-items">
+      {CATALOGUE_DATA.map((item) => {
+        return (
+          <CatalogueItem
+            key={item.id}
+            name={item.name}
+            url={item.url}
+            imgUrl={item.imgUrl}
+          />
+        )
+      })}
+    </div>
   </section>
 )
 
