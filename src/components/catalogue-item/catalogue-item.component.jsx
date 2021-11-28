@@ -1,21 +1,14 @@
 // styles
-import './catalogue-item.styles.sass'
+import { Item, Span, Letter } from './catalogue-item.styles.js'
 
-const CatalogueItem = ({ name, url, imgUrl }) => {
-  const backgroundImage = {
-    backgroundImage: `url("/images/${imgUrl}")`,
-    gridArea: name,
-  }
-  console.log(backgroundImage)
+const CatalogueItem = ({ title, name, imgUrl }) => {
+  const href = '/' + name
 
   return (
-    <a
-      href={url}
-      className="catalogue-item"
-      style={backgroundImage}
-    >
-      <span>{name}</span>
-    </a>
+    <Item href={href} imgUrl={imgUrl} name={name}>
+      <Span>{title}</Span>
+      <Letter>{name[0]}</Letter>
+    </Item>
   )
 }
 
