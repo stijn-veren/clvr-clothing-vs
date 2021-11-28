@@ -10,7 +10,11 @@
 
 ## Resources:
 
-...
+sass:
+- https://yarnpkg.com/package/sass
+
+styled-components:
+- https://styled-components.com/
 
 #
 
