@@ -1,14 +1,17 @@
 // components
-import CATALOGUE_DATA from '../../assets/catalogue.data'
+import {getCatalogueData} from '../../assets/catalogue.data'
 import CatalogueItem from '../catalogue-item'
 
 // styles
 import { CatalogueContainer } from './catalogue.styles.js'
 
-const Catalogue = () => (
+const Catalogue = () => {
+  const catalogue = getCatalogueData()
+
+  return(
   <section>
     <CatalogueContainer>
-      {CATALOGUE_DATA.map((item) => {
+      {catalogue.map((item) => {
         return (
           <CatalogueItem
             key={item.id}
@@ -20,6 +23,6 @@ const Catalogue = () => (
       })}
     </CatalogueContainer>
   </section>
-)
+)}
 
 export default Catalogue
