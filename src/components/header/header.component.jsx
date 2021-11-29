@@ -1,18 +1,27 @@
+// modules
+import { Link } from 'react-router-dom'
+
 // components
-import APP_DATA from '../../assets/app.data'
+import { getAppData } from '../../assets/app.data.js'
 import Navigation from '../navigation'
 
 // styles
 import { HeaderStyled, TitleStyled, LogoStyled } from './header.styles.js'
 
-const Header = () => (
-  <HeaderStyled>
-    <TitleStyled>
-      <LogoStyled />
-      <h1>{APP_DATA.title}</h1>
-    </TitleStyled>
-    <Navigation />
-  </HeaderStyled>
-)
+const Header = () => {
+  const appData = getAppData()
+
+  return (
+    <HeaderStyled>
+      <TitleStyled>
+        <Link to="/">
+          <LogoStyled />
+        </Link>
+        <h1>{appData.title}</h1>
+      </TitleStyled>
+      <Navigation />
+    </HeaderStyled>
+  )
+}
 
 export default Header
