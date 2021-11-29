@@ -1,5 +1,5 @@
 // components
-import APP_DATA from '../../assets/app.data'
+import { getAppData } from '../../assets/app.data.js'
 import NavLink from '../nav-link'
 
 // styles
@@ -7,11 +7,17 @@ import { Nav } from './navigation.styles'
 
 const Navigation = () => {
   const active = false
+  const appData = getAppData()
 
   return (
     <Nav>
-      {APP_DATA.menu.map((item) => (
-        <NavLink link={item.link} title={item.title} active={active} />
+      {appData.menu.map((item) => (
+        <NavLink
+          key={item.id}
+          link={item.link}
+          title={item.title}
+          active={active}
+        />
       ))}
     </Nav>
   )

@@ -1,8 +1,8 @@
 // styles
-import {Link} from './nav-link.styles'
+import { LinkStyled } from './nav-link.styles'
 
-const NavLink = ({link, title}) => (
-  <Link href={`/${link}`}>{title}</Link>
-)
+const NavLink = ({ link, title }) => {
+  return <LinkStyled to={`/${link}`}>{title}</LinkStyled>
+}
 
 export default NavLink
