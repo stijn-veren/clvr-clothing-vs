@@ -6,14 +6,16 @@ import { Outlet } from 'react-router-dom'
 import Header from '../../components/header'
 import Footer from '../../components/footer'
 
-const Layout = () => (
-  <Fragment>
-    <Header />
-    <main>
-      <Outlet />
-    </main>
-    <Footer />
-  </Fragment>
-)
+const Layout = ({data}) => {
+  return (
+    <Fragment>
+      <Header data={data} />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </Fragment>
+  )
+}
 
 export default Layout

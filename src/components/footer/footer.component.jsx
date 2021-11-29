@@ -1,21 +1,21 @@
 // components
-import {getAppData} from '../../assets/app.data.js'
+// import {getAppData} from '../../assets/app.data.js'
 
 // styles
 import { FooterStyled } from './footer.styles.js'
 
 const Footer = () => {
-  const appData = getAppData()
+  // const appData = getAppData()
   return(
   <FooterStyled>
-    <p>
+    {/* <p>
       {appData.fullName} <br /> &copy; {appData.copyright}
     </p>
     <p>
       {appData.phone}
       <br />
       {appData.email}
-    </p>
+    </p> */}
   </FooterStyled>
 )}
 
