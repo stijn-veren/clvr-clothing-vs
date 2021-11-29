@@ -5,10 +5,12 @@ const APP_DATA = {
   phone: '+380 (123) 456-78-90',
   email: 'clvr.clothing@gmail.com',
   menu: [
-    { title: 'Shop', link: 'shop' },
-    { title: 'About', link: 'about' },
-    { title: 'Contacts', link: 'contacts' },
+    { id: 1, title: 'Shop', link: 'shop' },
+    { id: 2, title: 'About', link: 'about' },
+    { id: 3, title: 'Contacts', link: 'contacts' },
   ],
 }
 
-export default APP_DATA
+export const getAppData = () => {
+  return APP_DATA
+}
