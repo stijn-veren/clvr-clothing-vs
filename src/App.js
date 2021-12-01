@@ -18,20 +18,55 @@ import './App.sass'
 class App extends Component {
   constructor() {
     super()
-    this.state = { data: { title: '', menu: [] } }
+    this.state = {
+      data: { title: '', menu: [] },
+      catalogue: [],
+      time: '',
+    }
   }
 
   async componentDidMount() {
+    const d = new Date()
+    let time = d.getTime()
+    this.setState({ time: time })
+
     try {
       const response = await fetch(`/data/app.data.json`)
       if (!response.ok) {
         throw Error(response.statusText)
       }
       const json = await response.json()
-      this.setState({ data: json })
+      setTimeout(() => {
+        this.setState({ data: json })
+        let time = d.getTime()
+        this.setState({ timeData: time })
+        console.log('data', this.state.data)
+      }, 1500)
     } catch (error) {
       console.log(error)
     }
+
+    try {
+      const response = await fetch(`/data/catalogue.data.json`)
+      if (!response.ok) {
+        throw Error(response.statusText)
+      }
+      const json = await response.json()
+      setTimeout(() => {
+        this.setState({ catalogue: json.catalogue_data })
+        let time = d.getTime()
+        this.setState({ timeCatalogue: time })
+        console.log('catalogue', this.state.catalogue)
+      }, 1000)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  componentDidUpdate() {
+    const d = new Date()
+    let time = d.getTime()
+    console.log(time - this.state.time)
   }
 
   render() {
